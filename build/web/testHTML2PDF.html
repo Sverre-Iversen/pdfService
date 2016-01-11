@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PDF-utskrift av faktaark med domenesperre - Demo</title>
+        <style>
+            div{
+                margin-left: 25px;
+                color: grey;
+            }
+        </style>
+    </head>
+<body>
+<h3>PDF-utskrift av faktaark med domenesperre - Demo</h3>
+    <div>    
+        <form method="POST" action="faktaark.pdf">
+            
+            <h3>URL:</h3>
+            <input style="width:700px" type="text" name="url" value="http://aps.ngu.no/pls/oradb/grus_GP_Omrade_fakta.Main?p_spraak=N&p_objid=69179" />
+            <br/>
+            <input type="submit"/>
+        </form>
+
+        <br/>
+        
+        <form method="POST" action="faktaark.pdf">
+            <h3>HTML:</h3>
+            <input style="width:700px" type="text" name="html" value="<html><body style='background-color:pink'><span>HEI - dette er ren HTML!</span></body></html>" />
+            <br/>
+            <input type="submit"/>
+        </form>     
+        
+        <br/>
+        
+        <h3>Testlenker:</h3>
+        <ul>
+            <li><a href="faktaark.pdf?http://geotest.ngu.no/kart/ngu_mobil/faktaark/visbronnRWD_ny.html">http://geotest.ngu.no/kart/ngu_mobil/faktaark/visbronnRWD_ny.html</a></li>
+            <li><a href="faktaark.pdf?http://aps.ngu.no/pls/oradb/grus_GP_Omrade_fakta.Main?p_spraak=N&amp;p_objid=69179">http://aps.ngu.no/pls/oradb/grus_GP_Omrade_fakta.Main?p_spraak=N&amp;p_objid=69179</a></li>
+            <li><a href="faktaark.pdf?http://www.ngu.no/ansatte/gisle-bakkeli">http://www.ngu.no/ansatte/gisle-bakkeli</a></li>
+            <li><a href="faktaark.pdf?http://nrk.no">http://nrk.no (skal ikke være mulig)</a></li>
+        </ul>
+    </div>
+</body>
+</html>
