@@ -1,14 +1,13 @@
 # pdfService
-------------
+
 PDF service based on Java and wkhtmltopdf.
 Uses wkhtmltopdf to generate PDF by posting URL or HTML to it.
 
 
 ## External dependencies
-------------------------
 
 ### wkhtmltopdf
----------------
+
 - Installation and documentation: http://wkhtmltopdf.org/
 - Supports: Windows, Linux and OS X
 - C Source code available
@@ -19,5 +18,5 @@ Uses wkhtmltopdf to generate PDF by posting URL or HTML to it.
     ```
 
 ## Inspired by
---------------
+
 https://github.com/geekdenz/wkhtmltopdf-service
