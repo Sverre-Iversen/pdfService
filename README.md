@@ -2,7 +2,7 @@
 
 PDF service based on Java and wkhtmltopdf.
 Uses wkhtmltopdf to generate PDF by posting URL or HTML to it.
-PDF parameters and domain blocking is configured in a properties file.
+PDF parameters and domain blocking are configured in a properties file.
 
 ## External dependencies
 
