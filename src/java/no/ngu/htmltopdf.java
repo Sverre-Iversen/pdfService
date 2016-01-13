@@ -40,7 +40,7 @@ public class htmltopdf extends HttpServlet {
     String[] params;
     String sParams;
     ResourceBundle messages;
-    static final String BUNDLE = "htmltopdf";
+    static final String BUNDLE = "pdfService";
     
     public htmltopdf() {
         super();
