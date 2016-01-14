@@ -19,7 +19,7 @@ PDF parameters and domain blocking are configured in a properties file.
 
 #### wkhtmltopdf and screen resolution
 
-wkhtmltopdf does the job in converting HTML documents to PDF, but is dependent on the screen resolution. So when everything looks right on your development machine, everything is zoomed in on your production server. When your development system have say 1920x1080 screen resolution, your headless production system (which may not even have a graphical interface) will probably have a lower resolution. Use a smaller zoom parameter value in your properties file to compensate for this.
+wkhtmltopdf does the job in converting HTML documents to PDF, but is dependent on the screen resolution. So when everything looks right on your development machine, everything is zoomed in on your production server. When your development system have say 1920x1080 screen resolution, your headless production system (which may not have a graphical interface) will probably have a lower resolution. Use a smaller zoom parameter value in your properties file to compensate for this.
 
 ## Inspired by
 
