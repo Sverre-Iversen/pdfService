@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
     <servlet>
-        <servlet-name>Faktaark</servlet-name>
-        <servlet-class>no.ngu.htmltopdf</servlet-class>
+        <servlet-name>FactSheet</servlet-name>
+        <servlet-class>no.ngu.FactSheet</servlet-class>
+        <load-on-startup>20</load-on-startup>
+    </servlet>
+    <servlet>
+        <servlet-name>WebPage</servlet-name>
+        <servlet-class>no.ngu.WebPage</servlet-class>
         <load-on-startup>20</load-on-startup>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Faktaark</servlet-name>
+        <servlet-name>FactSheet</servlet-name>
         <url-pattern>/faktaark.pdf</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>WebPage</servlet-name>
+        <url-pattern>/webside.pdf</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

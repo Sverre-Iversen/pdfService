@@ -1,3 +1,5 @@
+package no.ngu;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -19,7 +21,7 @@ import org.apache.commons.io.IOUtils;
  * @author student
  */
 //@WebServlet(name = "htmltopdf", urlPatterns = {"/render.pdf"})
-public class htmltopdf extends HttpServlet {
+public class FactSheet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP
@@ -32,15 +34,15 @@ public class htmltopdf extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     
-    static final String SEP = ",";
+    static final String SEP = ",,";
     String[] validQueryPatterns;
     String[] validRefererPatterns;
     String[] params;
     String sParams;
     ResourceBundle messages;
-    static final String BUNDLE = "htmltopdf";
+    static final String BUNDLE = "FactSheet";
     
-    public htmltopdf() {
+    public FactSheet() {
         super();
         messages = ResourceBundle.getBundle(BUNDLE);
         //read patterns

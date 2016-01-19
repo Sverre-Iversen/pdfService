@@ -2,43 +2,89 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PDF-utskrift av faktaark med domenesperre - Demo</title>
+        <title>PDF-utskrift av website med domenesperre - Demo</title>
         <style>
             div{
-                margin-left: 25px;
+                margin: 0 25px;
                 color: grey;
+                padding: 0 10px;
+                background-color: aliceblue;
+            }
+            
+            textarea{
+                width: 700px;
+                height: 370px;
             }
         </style>
     </head>
 <body>
-<h3>PDF-utskrift av faktaark med domenesperre - Demo</h3>
-    <div>    
+<h3>PDF-utskrift av faktaark og websider med domenesperre - Demo</h3>
+        <p>Tjenesten kan ikke startes fra adresselinjen i nettleseren,
+            men må bakes inn i en html-side eller applikasjon med ngu.no-opphav.
+            Alle refererte URL-adresser må komme fra ngu.no-domenet.
+        </p>
+    <div>
+               
         <form method="POST" action="faktaark.pdf">
             
-            <h3>URL:</h3>
-            <input style="width:700px" type="text" name="url" value="http://aps.ngu.no/pls/oradb/grus_GP_Omrade_fakta.Main?p_spraak=N&p_objid=69179" />
+            <h3>URL tilpasset faktaark - lim gjerne inn en annen ngu.no-adresse:</h3>
+            <input style="width:700px" type="text" name="url" value="http://aps.ngu.no/pls/oradb/!hydro.hgb.visbronn?pktid=133180" />
             <br/>
-            <input type="submit"/>
+            <input type="submit" value="Send"/>
         </form>
 
         <br/>
         
-        <form method="POST" action="faktaark.pdf">
-            <h3>HTML:</h3>
-            <input style="width:700px" type="text" name="html" value="<html><body style='background-color:pink'><span>HEI - dette er ren HTML!</span></body></html>" />
+        <form method="POST" action="webside.pdf">
+            
+            <h3>URL tilpasset webside - lim gjerne inn en annen ngu.no-adresse:</h3>
+            <input style="width:700px" type="text" name="url" value="http://www.ngu.no/emne/havbunn" />
             <br/>
-            <input type="submit"/>
-        </form>     
+            <input type="submit" value="Send"/>
+        </form>
         
         <br/>
         
         <h3>Testlenker:</h3>
         <ul>
-            <li><a href="faktaark.pdf?http://geotest.ngu.no/kart/ngu_mobil/faktaark/visbronnRWD_ny.html">http://geotest.ngu.no/kart/ngu_mobil/faktaark/visbronnRWD_ny.html</a></li>
-            <li><a href="faktaark.pdf?http://aps.ngu.no/pls/oradb/grus_GP_Omrade_fakta.Main?p_spraak=N&amp;p_objid=69179">http://aps.ngu.no/pls/oradb/grus_GP_Omrade_fakta.Main?p_spraak=N&amp;p_objid=69179</a></li>
-            <li><a href="faktaark.pdf?http://www.ngu.no/ansatte/gisle-bakkeli">http://www.ngu.no/ansatte/gisle-bakkeli</a></li>
-            <li><a href="faktaark.pdf?http://nrk.no">http://nrk.no (skal ikke være mulig)</a></li>
+            <li><a href="faktaark.pdf?http://aps.ngu.no/pls/oradb/!hydro.hgb.visbronn?pktid=133180">Faktaark 1: http://aps.ngu.no/pls/oradb/!hydro.hgb.visbronn?pktid=133180</a></li>
+            <li><a href="faktaark.pdf?http://aps.ngu.no/pls/oradb/grus_GP_Omrade_fakta.Main?p_spraak=N&amp;p_objid=69179">Faktaark 2: http://aps.ngu.no/pls/oradb/grus_GP_Omrade_fakta.Main?p_spraak=N&amp;p_objid=69179</a></li>
+            <li><a href="webside.pdf?http://www.ngu.no/ansatte/gisle-bakkeli">Webside 1: http://www.ngu.no/ansatte/gisle-bakkeli</a></li>
+            <li><a href="webside.pdf?http://nrk.no">Webside 2: http://nrk.no (skal ikke være mulig)</a></li>
         </ul>
-    </div>
+
+        <br/>
+
+        <form method="POST" action="webside.pdf">
+            <h3>HTML:</h3>
+            <textarea style="width:700px" name="html">
+<html>
+<head>
+<style>
+span {
+  display:block;
+  text-align:center;
+}
+img{
+  width:100px;
+  height:100px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  -webkit-transform:translate(-50%,-50%) rotate(45deg);
+  transform:translate(-50%,-50%) rotate(45deg);
+}
+</style>
+</head>
+<body style='background-color:pink'>
+  <span>HEI - klarer du i rotere et bilde?</span>
+  <img height='200px' src='https://avatars2.githubusercontent.com/u/1905113?v=3&s=460'/>
+</body>
+</html>
+            </textarea>
+            <br/>
+            <input type="submit" value="Send"/>
+        </form>     
+    </div>       
 </body>
 </html>

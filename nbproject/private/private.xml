@@ -3,13 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/My%20Documents/NetBeansProjects/pdfService/src/conf/MANIFEST.MF</file>
-            <file>file:/C:/My%20Documents/NetBeansProjects/pdfService/web/META-INF/context.xml</file>
+            <file>file:/C:/My%20Documents/NetBeansProjects/pdfService/web/pureHTML.html</file>
+            <file>file:/C:/My%20Documents/NetBeansProjects/pdfService/src/java/no/ngu/FactSheet.java</file>
+            <file>file:/C:/My%20Documents/NetBeansProjects/pdfService/src/java/no/ngu/WebPage.java</file>
+            <file>file:/C:/My%20Documents/NetBeansProjects/pdfService/src/java/FactSheet.properties</file>
             <file>file:/C:/My%20Documents/NetBeansProjects/pdfService/web/testHTML2PDF.html</file>
-            <file>file:/C:/My%20Documents/NetBeansProjects/pdfService/src/java/pdfService.properties</file>
             <file>file:/C:/My%20Documents/NetBeansProjects/pdfService/web/WEB-INF/web.xml</file>
-            <file>file:/C:/My%20Documents/NetBeansProjects/pdfService/README.md</file>
-            <file>file:/C:/My%20Documents/NetBeansProjects/pdfService/src/java/no/ngu/htmltopdf.java</file>
+            <file>file:/C:/My%20Documents/NetBeansProjects/pdfService/src/java/WebPage.properties</file>
         </group>
     </open-files>
 </project-private>
