@@ -5,15 +5,19 @@
         <title>PDF-utskrift av website med domenesperre - Demo</title>
         <style>
             div{
-                margin: 0 25px;
+                margin: 5px 25px;
                 color: grey;
-                padding: 0 10px;
+                padding: 1px 10px;
                 background-color: aliceblue;
             }
-            
+            input, textArea {
+                width: 100%;
+            }
             textarea{
-                width: 700px;
                 height: 370px;
+            }
+            li{
+                word-break: break-all;
             }
         </style>
     </head>
@@ -27,8 +31,8 @@
                
         <form method="POST" action="faktaark.pdf">
             
-            <h3>URL tilpasset faktaark - lim gjerne inn en annen ngu.no-adresse:</h3>
-            <input style="width:700px" type="text" name="url" value="http://aps.ngu.no/pls/oradb/!hydro.hgb.visbronn?pktid=133180" />
+            <h3>URL-tilpasset faktaark - lim gjerne inn en annen ngu.no-adresse:</h3>
+            <input style="width:100%" type="text" name="url" value="http://aps.ngu.no/pls/oradb/!hydro.hgb.visbronn?pktid=133180" />
             <br/>
             <input type="submit" value="Send"/>
         </form>
@@ -37,8 +41,8 @@
         
         <form method="POST" action="webside.pdf">
             
-            <h3>URL tilpasset webside - lim gjerne inn en annen ngu.no-adresse:</h3>
-            <input style="width:700px" type="text" name="url" value="http://www.ngu.no/emne/havbunn" />
+            <h3>URL-tilpasset webside - lim gjerne inn en annen ngu.no-adresse:</h3>
+            <input type="text" name="url" value="http://www.ngu.no/emne/havbunn" />
             <br/>
             <input type="submit" value="Send"/>
         </form>
@@ -56,8 +60,8 @@
         <br/>
 
         <form method="POST" action="webside.pdf">
-            <h3>HTML:</h3>
-            <textarea style="width:700px" name="html">
+            <h3>HTML - eller lim inn din egen (NB: begrens mengden):</h3>
+            <textarea name="html">
 <html>
 <head>
 <style>
@@ -85,6 +89,6 @@ img{
             <br/>
             <input type="submit" value="Send"/>
         </form>     
-    </div>       
+    </div>
 </body>
 </html>
